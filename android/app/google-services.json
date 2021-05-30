@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1007103239106",
+    "project_id": "covtrace-authentication",
+    "storage_bucket": "covtrace-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007103239106:android:96da811f18d8ed51c3ec5b",
+        "android_client_info": {
+          "package_name": "com.faheem.covtrace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007103239106-fp290d45fupo0ib3ij76omouo6dbl46r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgtgo5flIvrYYQWm9Mmi1JUSsBiPHl9I4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007103239106-fp290d45fupo0ib3ij76omouo6dbl46r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007103239106:android:4234642fedb63e85c3ec5b",
+        "android_client_info": {
+          "package_name": "com.faheem.covtrace_authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007103239106-fp290d45fupo0ib3ij76omouo6dbl46r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgtgo5flIvrYYQWm9Mmi1JUSsBiPHl9I4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007103239106-fp290d45fupo0ib3ij76omouo6dbl46r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
