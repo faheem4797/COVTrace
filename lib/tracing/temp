@@ -1,0 +1,53 @@
+//Each document in 'Publications' collection is a unique random ID of type String, which in turn holds two other values namely "name" and "url" which are both Strings. 
+"publications":{
+    "documentID" :{
+        type: String,
+        "name" : {
+            type: String
+        }
+        "url" : {
+            type: String
+        }
+    }
+}
+
+
+
+
+// Each document in "records" collection has a unique random ID of type String, which in turn holds three values which are: "cnic" a string, "result" a string showing COVID test result. "time" a timestamp showing the moment the test was conducted.
+"records" : {
+    "firstdocumentID" : {
+        type: String,
+        "cnic" : {
+            type : String
+            }
+        "result" : {
+            type: String
+        }
+        "time" : {
+            type: timestamp
+        }
+    }
+}
+
+
+// Each document in "users" collection has a unique document ID which is actually the ID generated for each user. Every document will have a "cnic" of type string and a new collection "contacts".
+"users" : {
+    "firstdocumentID" : {
+        type: String,
+        "cnic" : {
+            type : String
+        }
+        "contacts" : {  // The "contacts" collection will show with whom the user has been in contact and will store "cnic" (string) and "conatact time" (timestamp) of the other person with whom he has been in contact with.
+            "documentID" : {
+                type: String,
+                "cnic" : {
+                    type : String
+                }
+                "conatct time" : {
+                    type : timestamp
+                }
+        }
+    }
+
+}

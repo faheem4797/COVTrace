@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dashboard.dart';
+import 'publications.dart';
 
 class AdminCOVIDRecords extends StatefulWidget {
   @override

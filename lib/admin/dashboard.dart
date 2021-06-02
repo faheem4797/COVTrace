@@ -1,3 +1,4 @@
+import 'package:covtrace/admin/login.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'records.dart';
@@ -118,21 +119,29 @@ class AdminDrawerBuilder extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AdminCOVIDRecords()),
+                );
+              },
               leading: Icon(Icons.account_box),
-              title: Text("Profile"),
+              title: Text("COVID Records"),
             ),
             ListTile(
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AdminPublications()),
+                );
+              },
               leading: Icon(Icons.help),
-              title: Text("Help"),
+              title: Text("Publications"),
               //tileColor: Colors.redAccent,
-            ),
-            ListTile(
-              leading: Icon(Icons.question_answer),
-              title: Text("FAQs"),
-            ),
-            ListTile(
-              leading: Icon(Icons.info),
-              title: Text("About Us"),
             ),
           ],
         ),

@@ -8,6 +8,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:covtrace/apikey.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
+import 'package:covtrace/userdashboard.dart';
 
 class HCWDashboard extends StatefulWidget {
   @override
@@ -130,47 +131,6 @@ class _HCWDashboardState extends State<HCWDashboard> {
                   ),
                 ),
               ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class DrawerBuilder extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Drawer(
-      child: Container(
-        color: Colors.redAccent.shade100,
-        child: ListView(
-          children: [
-            Container(
-              color: Colors.redAccent,
-              child: SizedBox(
-                height: 170,
-                child: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/3.png"),
-                ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.account_box),
-              title: Text("Profile"),
-            ),
-            ListTile(
-              leading: Icon(Icons.help),
-              title: Text("Help"),
-              //tileColor: Colors.redAccent,
-            ),
-            ListTile(
-              leading: Icon(Icons.question_answer),
-              title: Text("FAQs"),
-            ),
-            ListTile(
-              leading: Icon(Icons.info),
-              title: Text("About Us"),
             ),
           ],
         ),

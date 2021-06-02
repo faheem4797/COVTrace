@@ -6,7 +6,6 @@ import 'package:path/path.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:covtrace/userdashboard.dart';
 
 class Publications extends StatefulWidget {
@@ -28,23 +27,6 @@ class _PublicationsState extends State<Publications> {
   File sampleDoc;
   String fileName;
   bool fileExist = false;
-
-  Future<String> uploadFile(String destination, File file) async {
-    try {
-      await firebase_storage.FirebaseStorage.instance
-          .ref(destination)
-          .putFile(file);
-
-      String tempDownloadURL = await firebase_storage.FirebaseStorage.instance
-          .ref(destination)
-          .getDownloadURL();
-
-      return tempDownloadURL;
-    } on FirebaseException catch (e) {
-      print(e);
-      return null;
-    }
-  }
 
   Future<File> getFileFromUrl(String url) async {
     setState(() {

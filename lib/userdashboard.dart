@@ -212,21 +212,55 @@ class DrawerBuilder extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MedicalServices()),
+                );
+              },
               leading: Icon(Icons.account_box),
-              title: Text("Profile"),
+              title: Text("Nearby Medical Services"),
             ),
             ListTile(
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => StartTracing()),
+                );
+              },
               leading: Icon(Icons.help),
-              title: Text("Help"),
+              title: Text("User Status"),
               //tileColor: Colors.redAccent,
             ),
             ListTile(
+              onTap: () {},
               leading: Icon(Icons.question_answer),
-              title: Text("FAQs"),
+              title: Text("News & Statistics"),
             ),
             ListTile(
+              onTap: () {},
               leading: Icon(Icons.info),
-              title: Text("About Us"),
+              title: Text("Home Delivery & Vaccination"),
+            ),
+            ListTile(
+              onTap: () {},
+              leading: Icon(Icons.info),
+              title: Text("Chatbot"),
+            ),
+            ListTile(
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HCWDashboard()),
+                );
+              },
+              leading: Icon(Icons.info),
+              title: Text("HCW Portal"),
             ),
           ],
         ),
