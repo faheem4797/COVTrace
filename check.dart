@@ -73,7 +73,7 @@ class _checkState extends State<check> {
           child: Center(
               child: Text("Check",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.grey,
                   ))),
         ),
       ),
